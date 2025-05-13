@@ -14,8 +14,8 @@ app.use(cors());
 app.use(express.static("public"));
 
 // Create an HTTP server
-const server = app.listen(port, '0.0.0.0', () => {
-  console.log(`Server running at http://0.0.0.0:${port}`);
+const server = app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
 });
 
 // Set up Socket.io with CORS configuration
