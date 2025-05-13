@@ -21,7 +21,7 @@ const server = app.listen(port, '0.0.0.0', () => {
 // Set up Socket.io with CORS configuration
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:5173", // Vite's default development port
+    origin: "https://5173-cs-689177936216-default.cs-asia-southeast1-cash.cloudshell.dev", // Vite's default development port
     methods: ["GET", "POST"],
     credentials: true
   },
